@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Bookman Old Style", "Cambria", "Arial";
+
+    /*cursor: url(images/cursor/cursor_32.png), auto;*/
+}
+
+input[type="file"] { 
+    cursor: inherit;
+}
+
+body * {
+    margin: 0 auto;
+}
+
+table {
+    width: 95%;
+}
+
+/* header.php */
+.account-header {
+    width: auto;
+    height: 64px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+}
+#avatar {
+    float: left;
+}
+.account-header .account-details {
+    float: left;
+    padding: 8px;
+    line-height: 22px;
+}
+#logout {
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+}
+
+td {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+
+    background-color: rgb(255, 181, 44);
+}
+
+.header td {
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+}
+.footer td {
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+
+@keyframes barrel {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+img#barrel {
+    animation-name: barrel;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.header > td {
+    font-size: 60px;
+    text-align: center;
+
+    padding: 20px;
+}
+.header a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+span.me {
+    font-size: 10px;
+}
+
+.menu {
+    font-size: 30px;
+}
+.menu ul{
+    padding-left: 0px;
+}
+.menu li {
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.menu a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+
+    transition: all 0.2s;
+}
+.menu a:hover {
+    background-color: rgb(223, 159, 41);
+}
+.menu a:active {
+    background-color: rgb(187, 135, 37);
+}
+
+/* content */
+
+.table-content > td {
+    background-color: rgba(255, 255, 255, 1);
+}
+.table-content {
+    color: black;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+.content h1.home {
+    font-size: 100px;
+    padding: 20px;
+    padding-left: 50px;
+    font-weight: bold;
+}
+.content h2.home {
+    font-size: 50px;
+    padding: 20px;
+    padding-left: 50px;
+    font-weight: bold;
+}
+.content p.home {
+    font-size: 30px;
+}
+.content a {
+    text-decoration: none;
+}
+.content .signup-area {
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+}
+.content button.content {
+    font-size: 20px;
+    border: none;
+    
+    height: 60px;
+    width: 350px;
+
+    background-color: rgb(255, 181, 44);
+
+    transition: all 0.2s;
+}
+.content button.content:hover {
+    width: 380px;
+    background-color: rgb(223, 159, 41);
+}
+.content button.content:active {
+    width: 380px;
+    background-color: rgb(187, 135, 37);
+}
+
+button.bigger {
+    display: block;
+    width: 500px !important;
+}
+button.bigger:hover {
+    width: 530px !important;
+}
+
+
+h2.form {
+    font-size: 50px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    font-size: 18px;
+    padding: 24px;
+}
+
+/* forms (signup.php) */
+
+section.signup-form {
+    padding: 18px;
+}
+
+.signup-form input.input-text {
+    display: block;
+    
+    padding: 15px;
+    margin-bottom: 15px;
+
+    font-size: 24px;
+    text-align: left;
+    width: 390px;
+}
+
+.signup-form button {
+    font-size: 22px;
+    border: none;
+    
+    height: 60px;
+    width: 420px;
+
+    background-color: rgb(255, 181, 44);
+
+    transition: all 0.2s;
+}
+.signup-form button:hover {
+    width: 450px;
+    background-color: rgb(223, 159, 41);
+}
+.signup-form button:active {
+    background-color: rgb(187, 135, 37);
+}
+
+/* login.php */
+
+section.login-form {
+    padding: 18px;
+}
+
+.login-form input.input-text {
+    display: block;
+    
+    padding: 15px;
+    margin-bottom: 15px;
+
+    font-size: 24px;
+    text-align: left;
+    width: 390px;
+}
+
+.login-form button {
+    font-size: 22px;
+    border: none;
+    
+    height: 60px;
+    width: 420px;
+
+    background-color: rgb(255, 181, 44);
+
+    transition: all 0.2s;
+}
+.login-form button:hover {
+    width: 440px;
+    background-color: rgb(223, 159, 41);
+}
+.login-form button:active {
+    background-color: rgb(187, 135, 37);
+}
+
+/* profile.php */
+
+.profile-area {
+    font-size: 30px;
+    padding: 20px;
+}
+.profile-area input.cursor_options {
+    width: 30px;
+    transform: scale(150%);
+}
+.profile-area button {
+    display: block;
+    margin-top: 15px;
+}
+section.profile-area {
+    padding: 15px;
+}
+.profile-area input.input-text {
+    width: 380px;
+
+    font-size: 26px;
+    text-align: left;
+}
+
+.profile-area table, .profile-area td {
+    border: none;
+    background-color: white;
+    padding: 5px;
+}
+.profile-area td:first-child {
+    text-align: right;
+}
+.profile-area td:last-child {
+    text-align: left;
+}
+
+.profile-area .wrapper {
+    float: left;
+    padding: 5px;
+}
+.profile-area p.size-info {
+    font-size: 14px;
+}
+.profile-area .upload-button {
+    display: block;
+    clear: both;
+    margin-left: 5px;
+
+    font-size: 18px;
+}
+.profile-area .reset-button {
+    display: inline;
+    clear: both;
+    margin: 5px;
+
+    font-size: 20px;
+}
+
+/* leaderboard.php */
+.list-account {
+    width: 500px;
+    height: 128px;
+
+    background-color: rgb(236, 236, 236);
+    border: 2px solid rgba(0, 0, 0, 0.4);
+
+    font-size: 22px;
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+.list-account .account-details {
+    padding: 14px;
+}
+/* footer */
+
+.footer p {
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+}
